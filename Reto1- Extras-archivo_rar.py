@@ -1,22 +1,23 @@
 print("Calculadora Simple")
-numero1 = float(input("Ingrese el primer número: "))
-numero2 = float(input("Ingrese el segundo número: "))
+
+num1 = float(input("Ingrese el primer numero: "))
+num2 = float(input("Ingrese el segundo numero: "))
 operador = input("Ingrese un operador (+, -, *, /): ")
 
 if operador == '+':
-    resultado = numero1 + numero2
-    print("Resultado:", resultado)
+    resultado = num1 + num2
+    print("Resultado: ", resultado)
 elif operador == '-':
-    resultado = numero1 - numero2
-    print("Resultado:", resultado)
+    resultado = num1 - num2
+    print("Resultado: ", resultado)
 elif operador == '*':
-    resultado = numero1 * numero2
-    print("Resultado:", resultado)
+    resultado = num1 * num2
+    print("Resultado: ", resultado)
 elif operador == '/':
-    if numero2 != 0:
-        resultado = numero1 / numero2
-        print("Resultado:", resultado)
+    if num2 != 0:
+        resultado = num1 / num2
+        print("Resultado: ", resultado)
     else:
         print("Error: No se puede dividir por cero.")
 else:
-    print("Operador no válido")
+    print("Operador no valido")
